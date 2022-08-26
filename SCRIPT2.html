@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            THE PRACTICE
+
+        </title>
+       
+    </head>
+    <body> 
+          <input type="gender"/>
+
+        
+        <input type="date"/>
+        <input type="text" id = "TODOTITLE"></input>;
+        <button>press me</button>;
+
+            
+            <script>
+
+                let MENU = ['RICE','YAM','EBA'];
+
+                function CREATELIST(){
+
+                    let MENU = ['RICE','YAM','EBA'];
+                    let ITEMS = document.createElement('div');
+                    ITEMS.innerText = MENU;
+                    document.body.appendChild(ITEMS);
+
+
+                }
+
+               MENU.forEach( function CREATELIST(list){
+
+                    
+                    let ITEMS = document.createElement('div');
+                    ITEMS.innerText = list;
+                    document.body.appendChild(ITEMS);
+                });
+
+                CREATELIST();
+
+               /* let MENU = ('RICE','YAM','EBA');
+                let ITEMS = document.createElement('div');
+                ITEMS.innerText = MENU;
+                document.body.appendChild(ITEMS);
+
+                function ADDTODOS(){
+                    let textbox = document.getElementById('TODOTITLE');
+                let title = textbox.value;
+                todos.push(title);
+
+                }
+               */
+          
+                
+        
+            </script>
+     
+    </body>
+</html>
+
+
+
+
+
+
+

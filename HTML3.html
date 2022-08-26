@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            THE PRACTICE
+
+        </title>
+       
+    </head>
+    <body> 
+        <input id ="date-picker" type = "text"/>;
+        <button onclick="set()">add</button>;
+        <div id = "wele"></div>;
+        <input id ="yesoo" type="date"/>;
+        <button onclick="get()">date</button>;
+        <div id = "put"></div>;
+
+
+            
+        <script>
+          let todos = [''];
+
+            render();
+           /* todos.forEach(function(TODOTITLE){
+                let element = document.createElement('div');
+                element.innerText =TODOTITLE;
+                document.body.appendChild(element);
+            });
+            */
+        function set() {
+          
+            let extbox = document.getElementById('date-picker');
+           let itle = extbox.value;
+            todos.push(itle);
+            render();
+        };
+        function get(){
+            let A = document.getElementById('yesoo');
+            let B = A.value;
+            //let Z = document.getElementById('put');
+            //Z.innerText = B;
+            //Z.appendChild(B);
+
+           val();
+
+        }
+        function render(){
+            document.getElementById('wele').innerHTML ='';
+            todos.forEach(function(TODOTITLE){
+                //document.getElementById('wele').innerHTML ='';
+                let element = document.createElement('div');
+                element.innerText =TODOTITLE;
+                let todolist = document.getElementById('wele');
+                todolist.appendChild(element);
+            });
+        }
+
+        function val(){
+
+            let ment = document.createElement('div');
+            ment.innerText =B;
+            let list = document.getElementById('put');
+            list.appendChildm(ment);
+        };
+            
+
+
+
+
+
+
+             
+                
+        
+            </script>
+              
+     
+    </body>
+</html>
+
+
+
+
+
+
+
